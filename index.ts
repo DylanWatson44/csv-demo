@@ -3,13 +3,13 @@ const ParseCSVStringToArray = require("./src/parseCSV");
 
 const args = process.argv.slice(2);
 
-if (args.length < 2) {
-  console.error("file path and delimiter expected as arguments");
+if (args.length < 1) {
+  console.error("A file path is required as a argument");
   process.exit(2);
 }
 
 if (args.length > 2) {
-  console.error("only two arguments expected");
+  console.error("a max of two arguments are expected");
   process.exit(2);
 }
 
@@ -22,7 +22,10 @@ try {
   process.exit(2);
 }
 
-const delimiter = args[1];
+let delimiter = ",";
+if (args[1]) {
+  delimiter = args[1];
+}
 
 const parsedContent = ParseCSVStringToArray(data, delimiter);
 console.log(parsedContent);
