@@ -1,0 +1,33 @@
+{
+  "name": "csv-parser",
+  "version": "1.0.0",
+  "description": "demo csv parsing tool",
+  "main": "index.js",
+  "scripts": {
+    "demo": "ts-node index.ts ./sample.csv ,",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanWatson44/csv-demo.git"
+  },
+  "keywords": [
+    "csv"
+  ],
+  "author": "Dylan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanWatson44/csv-demo/issues"
+  },
+  "homepage": "https://github.com/DylanWatson44/csv-demo#readme",
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.11",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  }
+}
