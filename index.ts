@@ -4,7 +4,7 @@ const ParseCSVStringToArray = require("./src/parseCSV");
 const args = process.argv.slice(2);
 
 if (args.length < 1) {
-  console.error("A file path is required as a argument");
+  console.error("A file path is required as an argument");
   process.exit(2);
 }
 
